@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: simple-spring-ai-chat
+  ai:
+    model:
+      chat: ollama
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: mistral
+
