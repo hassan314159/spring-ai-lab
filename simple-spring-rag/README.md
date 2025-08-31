@@ -25,7 +25,7 @@ POST /api/chat-rag/load?url={url}&onlyCode={false}
 
 #### Parameters:
 - url (string, required): The webpage URL to fetch and index.
-- onlyCode (boolean, optional, default=false): If true, only <pre> and <code> blocks are extracted.
+- onlyCode (boolean, optional, default=false): If true, only  `<pre>` and `<code>` blocks are extracted.
 
 ###  Load a document into the VectorStore
 
