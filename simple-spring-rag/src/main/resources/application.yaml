@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: simple-spring-rag
+  ai:
+    model:
+      chat: ollama
+      embedding: ollama    # use Ollama client for EmbeddingModel
+    ollama:
+      base-url: http://localhost:11434
+      init:
+        # ⬇️ pull only if the model isn't available locally
+        pull-model-strategy: when_missing
+        # optional hardening:
+        timeout: 60s
+        max-retries: 1
+      chat:
+        options:
+          model: mistral
+      embedding:
+        options:
+          model: nomic-embed-text   # embedding model served by Ollama
+

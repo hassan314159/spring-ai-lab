@@ -10,6 +10,7 @@
     <modules>
         <module>simple-summarizer</module>
 		<module>simple-spring-ai-chat</module>
+        <module>simple-spring-rag</module>
     </modules>
 
     <properties>
